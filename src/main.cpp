@@ -127,7 +127,7 @@ void setup() {
 void loop() {
   Serial.print("Enter a string to convert it in the morse code: ");
   String input = getInput(); // Zavolá funkci pro získání vstupu
-  Serial.println("\nEnterer string: " + input);
+  Serial.println("\nEnterer string (english characters only!): " + input);
   String morse = encodeMorse(input); // Zavolá funkci pro zakódování vstupu do morseovy abecedy
   Serial.println("Morse code: " + morse);
   playMorse(morse); // Zavolá funkci pro přehrání morseovy abecedy
